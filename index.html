@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="f in frameworks">
+            {{f.name}} has {{f.votes}} votes
+            <button v-on:click="voteFor(f)">Vote</button>
+            <a href="#" v-on:click="remove(f)">Delete</a>
+        </li>
+    </ul>
+    <p>Current Winner(s): {{winnerString}}</p>
+
+    <button v-on:click="toggleEditMode">{{ editMode ? 'Done' : 'Edit' }}</button>
+    <input placeholder="Add new" v-if="editMode" v-on:keyup.enter="addNew">
+</div>
+<script src="index.js"></script>
+</body>
+</html>
