@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Andale Mono", Roboto, Arial, sans-serif; }
+
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: deepskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%; }
+  .app h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px; }
+    .app h1 span {
+      color: #ff5f24; }
+  .app ul {
+    margin-bottom: 40px;
+    width: 100%; }
+    .app ul li {
+      display: flex;
+      justify-content: space-between; }
+      .app ul li .special {
+        color: #c770ff;
+        font-size: 17px;
+        font-weight: bold; }
+      .app ul li .vote-btn {
+        color: #5dff58; }
+      .app ul li .delete-btn {
+        color: #ff0000; }
+  .app .new_candidate {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .app .new_candidate input {
+      margin-top: 20px;
+      height: 30px;
+      padding: 10px 5px;
+      width: 100%;
+      color: #000; }
+  .app * {
+    color: #fff; }
+
+/*# sourceMappingURL=index.css.map */

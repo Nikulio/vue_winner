@@ -1,5 +1,5 @@
 let app = new Vue({
-    el: '#app',
+    el: '#root',
     data: {
         editMode : false,
         frameworks: [
